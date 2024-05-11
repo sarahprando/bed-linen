@@ -6,7 +6,10 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg">
         <ul className="navbar-nav">
           <NavLink to="/" className="nav-link" >Home</NavLink>
-          <NavLink to="/about" className="nav-link">About</NavLink>
+          <NavLink to="/payment" className="nav-link">Payment</NavLink>
+          <NavLink to="/catalog" className="nav-link">Catalog</NavLink>
+          <NavLink to="/shop" className="nav-link">Shop</NavLink>
+          <NavLink to="/blog" className="nav-link">Blog</NavLink>
         </ul>
       </nav>
     </header>

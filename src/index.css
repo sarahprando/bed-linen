@@ -1,8 +1,48 @@
+:root {
+  --text-color: #F5F7FA;
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+.nav-link {
+  background-image: linear-gradient(to right,
+      #96a3b6,
+      #96a3b6 50%,
+      var(--text-color) 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  background-position: 0;
+}
+
+body {
+  background: #375B68;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.7rem;
-    padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  padding-left: 1.7rem;
 }
 
 header {
-    height: 100px;
+  height: 100px;
+}
+
+.profile {
+  gap: 5px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-style: bold;
 }

@@ -4,15 +4,36 @@ import Account from '../assets/icon/account.svg?react';
 import Language from '../assets/icon/language.svg?react';
 
 const Navbar = () => {
+
   return (
     <header className="header mx-auto d-flex align-items-center position-sticky">
       <nav className="navbar navbar-expand-lg">
         <ul className="navbar-nav text-color">
-          <NavLink to="/" className="nav-link">Home</NavLink>
-          <NavLink to="/payment" className="nav-link">Payment</NavLink>
-          <NavLink to="/catalog" className="nav-link">Catalog</NavLink>
-          <NavLink to="/shop" className="nav-link">Shop</NavLink>
-          <NavLink to="/blog" className="nav-link">Blog</NavLink>
+          <li>
+            <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link ativo' : 'nav-link'}>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/payment" className={({ isActive }) => isActive ? 'nav-link ativo' : 'nav-link'}>
+              Payment
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/catalog" className={({ isActive }) => isActive ? 'nav-link ativo' : 'nav-link'}>
+              Catalog
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/shop" className={({ isActive }) => isActive ? 'nav-link ativo' : 'nav-link'}>
+              Shop
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/blog" className={({ isActive }) => isActive ? 'nav-link ativo' : 'nav-link'}>
+              Blog
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <div className="profile ml-auto d-flex">
@@ -27,7 +48,7 @@ const Navbar = () => {
         </NavLink>
       </div>
     </header>
-  )
-}
+  );
+};
 
 export default Navbar;

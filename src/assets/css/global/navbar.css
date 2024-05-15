@@ -1,25 +1,35 @@
 /* ----- color and hover nav-link ----- */
 
-.nav-link {
+.nav-link,
+.nav-link.ativo:hover {
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
     font-size: 20px;
-    background-image: linear-gradient(to right,
-            #96a3b6,
-            #96a3b6 50%,
-            var(--text-color) 50%);
-    background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
-    padding: 5px 0;
-    position: relative;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
+    color: var(--text-color);
 }
 
 .nav-link:hover {
-    background-position: 0;
+    color: #96a3b6;
+}
+
+.navbar-nav .nav-link.ativo:after {
+    content: "";
+    display: block;
+    background-image: url(../../icon/favicon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* Ajusta o tamanho da imagem conforme necessário */
+    position: absolute;
+    width: 50px;
+    /* Ajuste o valor conforme necessário */
+    height: 50px;
+    /* Ajuste o valor conforme necessário */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translateX(-50%);
+    /* Centraliza horizontalmente */
+    bottom: -25px;
+    /* Ajuste a distância da imagem abaixo do texto */
 }
 
 /* ----- spacing between navbar ----- */
@@ -27,6 +37,10 @@
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.7rem;
     padding-left: 1.7rem;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
 }
 
 /* ----- icons profile ----- */

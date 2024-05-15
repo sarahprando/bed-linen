@@ -1,0 +1,11 @@
+/* ----- colors ----- */
+
+:root {
+    --text-color: #F5F7FA;
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+/* ----- general ----- */

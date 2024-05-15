@@ -1,0 +1,22 @@
+/* ----- title and subhead ----- */
+
+.title,
+.subhead {
+    font-family: "Sahitya", serif;
+    ;
+}
+
+.title {
+    font-size: 64px;
+    background-image: linear-gradient(to bottom,
+            #3c545b,
+            #4B6975,
+            #78a8bc 73%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subhead {
+    font-size: 20px;
+}

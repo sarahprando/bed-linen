@@ -1,0 +1,9 @@
+/* ----- global ----- */
+
+@import url(../css/global/navbar.css);
+
+@import url(../css/global/utilities.css);
+
+/* ----- home ----- */
+
+@import url(../css/home/hero.css);

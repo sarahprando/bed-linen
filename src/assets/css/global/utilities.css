@@ -8,4 +8,31 @@
     color: var(--text-color);
 }
 
-/* ----- general ----- */
+/* ----- btnt cyrcle ----- */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon-button {
+    position: relative;
+}
+
+.button-container:hover {
+    stroke-width: 5px;
+}
+
+.text-button {
+    position: absolute;
+    padding-left: 90px;
+    font-size: 16px;
+}
+
+/* ----- reset button ----- */
+
+button {
+    all: unset; /* Remove todas as propriedades padrão do botão */
+    cursor: pointer;  
+}
